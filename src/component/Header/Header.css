@@ -1,0 +1,91 @@
+.background{
+   /* background-image: linear-gradient(120deg, rgba(25, 34, 46, 0.589) 38%, rgb(0, 0, 0) 100%); */
+   width: 100%;
+   height:80vh;
+   
+}
+.containertwo{
+   position: relative;
+   width: 100%;
+   height: 100%;
+   overflow: hidden;
+   background-color: rgb(0, 0, 0);
+   
+}
+.bubbles{
+   position: relative;
+   display: flex;
+}
+.bubbles span{
+   position: relative;
+   width: 15px;
+   height: 15px;
+   background: #4fc3dc;
+   margin: 0 15px;
+   border-radius: 50%;
+   box-shadow: 0 0 0 10px #0bc2eb44,
+               0 0 50px #4fc3dc,
+               0 0 100px #4fc3dc;
+   animation: animate 0.1s linear infinite;    
+   animation-duration: calc(350s / var(--i));        
+}
+
+@keyframes animate
+{
+   0%
+   {
+       transform: translateY(100vh) scale(0);
+   }
+   100%
+   {
+       transform: translateY(-10vh) scale(1);
+   }
+}
+.navbar-two{
+   background-color:transparent;
+   width: 100%;
+   position: fixed;
+   z-index: 11;
+   animation: reveal 0.5s ease;
+}
+@keyframes reveal {
+   0%{
+      transform: translateY(-100%);
+   }
+   100%{
+      transform: translateY(0%);
+   }
+}
+.navbar-two.active{
+   background-image: linear-gradient(120deg, rgba(19,35,56,1) 38%, rgba(2,0,36,1) 100%);
+}
+.navbar-collapse-two{
+   flex-grow: 0;
+}
+.text{
+   height: 60vh;
+   display: grid;
+   place-items: center;
+}
+.first-btn{
+    background: linear-gradient(120deg, rgba(19,35,56,1) 38%, rgba(2,0,36,1) 100%);
+    font-size: 13px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

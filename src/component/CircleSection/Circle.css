@@ -1,0 +1,69 @@
+
+.circle{
+    position: relative;
+    background-image: linear-gradient(96deg, #483ea1 0%, #0e0942 100%);
+    width: 140px;
+    height: 140px;
+    border-radius: 140px;
+}
+
+.circle span.inner-circle{
+    position: absolute;
+    width: 164px;
+    height: 164px;
+    border-width: 4px;
+    border-style: solid;
+    border-top-color: rgba(255, 255, 255, 0.781)!important;
+    border-radius: 164px;
+    top: -12px;
+    left: -12px;
+    background: rgba(0,0,0,0)!important;
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    transition: -webkit-transform .5s ease-in-out;
+    transition: transform .5s ease-in-out;
+    transition: transform .5s ease-in-out,-webkit-transform .5s ease-in-out;
+}
+.circle span.innerTwoCircle{
+    position: absolute;
+    width: 164px;
+    height: 164px;
+    border-radius: 164px;
+    left: -12px;
+    top: -12px;
+    transition: -webkit-transform .5s ease-in-out;
+    transition: transform .5s ease-in-out;
+    transition: transform .5s ease-in-out,-webkit-transform .5s ease-in-out;
+    
+}
+.circle span.innerTwoCircle::before{
+    background-image: linear-gradient(96deg, #483ea1 0%, #0e0942 100%);
+    content: "";
+    width: 44px;
+    height: 44px;
+    border-radius: 44px;
+    position: absolute;
+    left: -6px;
+    bottom: 22px;
+}
+.circle span.innerTwoCircle::after{
+    background-image: linear-gradient(96deg, #483ea1 0%, #0e0942 100%);
+    content: "";
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    border-radius: 18px;
+    right: 17px;
+    top: 17px;
+}
+.circle:hover span.inner-circle{
+    transform: rotate(180deg);
+    
+}
+.circle:hover span.innerTwoCircle{
+    transform: rotate(180deg);
+}
+.card-text-two{
+    padding: 10px 70px;
+}

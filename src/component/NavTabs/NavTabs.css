@@ -1,0 +1,13 @@
+.NavTabSection{
+    background: linear-gradient(120deg, rgb(188, 192, 197) 38%, rgba(2,0,36,1) 100%);
+    display: grid;
+    place-items: center;
+}
+.nav-pills-button{
+    background-color: rgba(216, 212, 212, 0.397) !important;
+}
+.nav-pills-button .nav-link.active,
+.nav-pills-button .show>.nav-link{
+    background: linear-gradient(120deg, rgba(19,35,56,1) 38%, rgba(2,0,36,1) 100%);
+    
+}

@@ -1,0 +1,108 @@
+.about-us-row{
+margin-top: -150px;
+}
+.about-card{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+.about-us-img{
+    width: 600px;
+    height: 500px;
+}
+.about-us-img img{
+    width: 100%;
+    height: 100%;
+}
+.progress-container{
+    position: relative;
+    flex-wrap: wrap;
+    gap: 40px;
+    background-image: linear-gradient(120deg, rgba(19,35,56,1) 38%, rgba(2,0,36,1) 100%);
+}
+
+.progress-container .progress-card{
+    position: relative;
+    width: 220px;
+    height: 220px;
+    
+}
+
+.progress-container .progress-card .percent{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    
+}
+.progress-container .progress-card .percent svg{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    transform: rotate(270deg);
+}
+.progress-container .progress-card .percent svg circle{
+    width: 100%;
+    height: 100%;
+    fill: transparent;
+    stroke-width: 3;
+    stroke: rgb(102, 99, 99);
+    transform: translate(5px,5px);
+}
+.progress-container .progress-card .percent svg circle:nth-child(2)
+{
+    stroke: #4fc3dc;
+    stroke-dasharray: 440;
+    stroke-dashoffset: calc(440 - (440 * var(--num))/100);
+    opacity: 0;
+    animation: animateCircle 1s linear forwards ;
+    animation-delay: 2.5s;
+    
+}
+@keyframes animateCircle{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        
+        opacity: 1;
+
+    }
+}
+.dot-animation{
+    animation: animateDot 2s linear forwards;
+}
+.dot{
+    position: absolute;
+    inset: 5px;
+    z-index: 10;
+    /* 360deg / 100 = 3.6 */
+  
+}
+@keyframes animateDot{
+    0%
+    {
+        transform: rotate(0deg);
+    }
+    100%
+    {
+        transform: rotate(calc(3.6deg * var(--num)));
+    }
+}
+.dot::before{
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #4fc3dc;
+    box-shadow: 0 0 10px #4fc3dc,
+    0 0 30px #4fc3dc;
+}
+.number{
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    animation: animateCircle 1s linear forwards ;
+    animation-delay: 2.5s;
+}
