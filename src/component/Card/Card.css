@@ -3,7 +3,7 @@
 }
 
 .cardCol{
-    padding: 60px 10px;
+    padding: 80px 10px;
 } 
 .cardCol p{
     font-size: 15px;
@@ -22,6 +22,9 @@
     }
 }
 @media screen and (max-width:575px) {
+    .cardCol{
+        padding: 5px 50px;
+    }
     
     .cardCol h5{
         font-size: 18px;

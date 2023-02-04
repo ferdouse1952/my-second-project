@@ -1,15 +1,14 @@
 import React from "react";
 import "./Header.css";
-import Home from "../Home/Home";
 import { Link } from "react-router-dom";
-import Service from "../Service/Service";
+
 
 const Header = () => {
   return (
     <>
-      <nav className="navbar navber navbar-expand-lg bg-body-tertiary">
+      <nav className="navbar navber navbar-expand-lg bg-body-tertiary fixed-top">
         <div className="container">
-          <Link as={Link} to="/" className="navbar-brand text-white" href="#">
+          <Link as={Link} to="/" className="navbar-brand fw-bold text-white" href="#">
             LOGO
           </Link>
           <div>
@@ -22,7 +21,7 @@ const Header = () => {
               aria-expanded="false"
               aria-label="Toggle navigation"
             >
-              <span className="navbar-toggler-icon"></span>
+              <span className="navbar-toggler-icon bg-white"></span>
             </button>
             <div className="collapse navbar-collapse" id="navbarNav">
               <ul className="navbar-nav">

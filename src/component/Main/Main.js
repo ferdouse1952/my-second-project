@@ -10,7 +10,7 @@ const Main = () => {
       <Home />
       <Service />
       <AboutUs />
-      <Contact/>
+      <Contact />
     </div>
   );
 };

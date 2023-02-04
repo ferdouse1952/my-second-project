@@ -26,7 +26,15 @@ a{
 }
 
 /* Responsive */
+@media screen and (max-width:1880px) {
+    .homeSection{
+        height: 82vh;
+    }
+}
 @media screen and (max-width:767px) {
+    .homeSection{
+        height: 70vh;
+    }
     .homeText h1{
         font-size: 32px;
     }

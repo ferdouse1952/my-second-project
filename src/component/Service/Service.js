@@ -40,7 +40,7 @@ const Service = () => {
     <>
       <div className="pt-5">
         <div className="service-text text-center">
-          <h3 className="fw-bold pt-5">We are offering best services</h3>
+          <h3 className="fw-bold">We are offering best services</h3>
         </div>
 
         <div className="container">

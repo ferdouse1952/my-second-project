@@ -1,4 +1,15 @@
 .service-text{
-    padding-top: 100px;
+    padding-top: 200px;
     padding-bottom: 30px;
+}
+
+@media screen and (max-width:575px) {
+    .service-text{
+       padding-bottom: 0px;
+    }
+    .service-text h3{
+        padding-top: 150px;
+        
+    }
+    
 }

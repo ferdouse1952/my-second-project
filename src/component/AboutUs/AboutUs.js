@@ -6,11 +6,10 @@ const AboutUs = () => {
   return (
     <>
       <div className="about-us-bg">
-        <div class="containertwo">
-          <h2 className="about-us-text d-flex justify-content-center fw-bold">
-            About Us
-          </h2>
-        </div>
+        <h2 className="about-us-text d-flex justify-content-center fw-bold">
+          About Us
+        </h2>
+
         <AboutUsCards />
         <div className="container">
           <div className="timeline-section">

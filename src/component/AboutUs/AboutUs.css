@@ -12,12 +12,7 @@ p{
      background-color: #F1F0ED;
      /* height: 40vh; */
 }
-/* .containertwo{
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-} */
+
 .bubbles{
     position: relative;
     display: flex;
@@ -144,6 +139,12 @@ p{
     .timeline-dot{
         left: -4px;
     }
+}
+@media screen and (max-width:575px) {
+    .about-us-bg{
+        padding-bottom: 0px;
+    }
+   
 }
 @media screen and (max-width:420px) {
     .timelinetext p{
