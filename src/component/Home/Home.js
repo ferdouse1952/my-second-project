@@ -1,9 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import AboutUs from "../AboutUs/AboutUs";
 import Card from "../Card/Card";
-import NavTabs from "../NavTabs/NavTabs";
-import Service from "../Service/Service";
 import "./Home.css";
 
 const Home = () => {
@@ -26,9 +23,6 @@ const Home = () => {
           </Link>
         </div>
         <Card />
-        <Service />
-        <NavTabs />
-        <AboutUs />
       </div>
     </>
   );

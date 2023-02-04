@@ -1,18 +1,20 @@
 import React from "react";
 import "./Header.css";
 import Home from "../Home/Home";
+import { Link } from "react-router-dom";
+import Service from "../Service/Service";
 
 const Header = () => {
   return (
     <>
-      <nav class="navbar navber navbar-expand-lg bg-body-tertiary">
-        <div class="container">
-          <a class="navbar-brand text-white" href="#">
+      <nav className="navbar navber navbar-expand-lg bg-body-tertiary">
+        <div className="container">
+          <Link as={Link} to="/" className="navbar-brand text-white" href="#">
             LOGO
-          </a>
+          </Link>
           <div>
             <button
-              class="navbar-toggler"
+              className="navbar-toggler"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#navbarNav"
@@ -20,38 +22,56 @@ const Header = () => {
               aria-expanded="false"
               aria-label="Toggle navigation"
             >
-              <span class="navbar-toggler-icon bg-white"></span>
+              <span className="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a
-                    class="nav-link text-white active"
+            <div className="collapse navbar-collapse" id="navbarNav">
+              <ul className="navbar-nav">
+                <li className="nav-item">
+                  <Link
+                    as={Link}
+                    to="/"
+                    className="nav-link text-white active"
                     aria-current="page"
                     href="#"
                   >
-                    Home
-                  </a>
+                    <h6>Home</h6>
+                  </Link>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link text-white" href="#">
-                    Features
-                  </a>
+                <li className="nav-item">
+                  <Link
+                    as={Link}
+                    to="/service"
+                    className="nav-link text-white"
+                    href="#"
+                  >
+                    <h6>Service</h6>
+                  </Link>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link text-white" href="#">
-                    Pricing
-                  </a>
+                <li className="nav-item">
+                  <Link
+                    as={Link}
+                    to="/about"
+                    className="nav-link text-white"
+                    href="#"
+                  >
+                    <h6>About Us</h6>
+                  </Link>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link text-white">Disabled</a>
+                <li className="nav-item">
+                  <Link
+                    as={Link}
+                    to="/contact"
+                    className="nav-link text-white"
+                    href="#"
+                  >
+                    <h6>Contact</h6>
+                  </Link>
                 </li>
               </ul>
             </div>
           </div>
         </div>
       </nav>
-      <Home />
     </>
   );
 };

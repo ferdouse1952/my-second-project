@@ -1,0 +1,20 @@
+/* google fonts start*/
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script|Saira&display=swap');
+/* google fonts end*/
+
+.contact-form{
+    background-color: #13203B;
+}
+.form-control{
+  border-radius:0px;
+  border:0px;
+}
+.font-primary{
+  font-family: 'Kaushan Script', cursive;
+}
+.font-secondary{
+  font-family: 'Saira', sans-serif;
+}
+.form-area{
+  border:1px solid #fff;
+}

@@ -72,52 +72,58 @@ const AboutUsCards = () => {
       </div>
       {/* progress-bar */}
       <div className="container progress-container d-flex justify-content-center align-items-center">
-                <div className="progress-card d-flex justify-content-center align-items-center">
-                    <div className="percent" style={{ "--num": 85 }} >
-                        <div id='dot1' className="dot dot-animation"></div>
-                        <svg>
-                            <circle cx='70' cy='70' r='70'></circle>
-                            <circle cx='70' cy='70' r='70'></circle>
-                        </svg>
-                        <div className="number d-flex justify-content-center align-items-center ">
-                            <h2 className='text-white'>85<span>%</span></h2>
-                        </div>
-                        <div className="prog-text text-white text-center">
-                            <h6>Creative Approach</h6>
-                        </div>
-                    </div>
-                </div>
-                <div className="progress-card d-flex justify-content-center align-items-center">
-                    <div className="percent" style={{ "--num": 75 }} >
-                        <div id='dot2' className="dot dot-animation"></div>
-                        <svg>
-                            <circle cx='70' cy='70' r='70'></circle>
-                            <circle cx='70' cy='70' r='70'></circle>
-                        </svg>
-                        <div className="number d-flex justify-content-center align-items-center text-white">
-                            <h2 className=''>75<span>%</span></h2>
-                        </div>
-                        <div className="prog-text text-white text-center text-white">
-                            <h6>Guaranteed Success</h6>
-                        </div>
-                    </div>
-                </div>
-                <div className="progress-card d-flex justify-content-center align-items-center">
-                    <div className="percent" style={{ "--num": 95 }} >
-                        <div id='dot3' className="dot dot-animation"></div>
-                        <svg>
-                            <circle cx='70' cy='70' r='70'></circle>
-                            <circle cx='70' cy='70' r='70'></circle>
-                        </svg>
-                        <div className="number d-flex justify-content-center align-items-center text-white ">
-                            <h2>95<span>%</span></h2>
-                        </div>
-                        <div className="prog-text text-white text-center text-white">
-                            <h6>SEO Optimization</h6>
-                        </div>
-                    </div>
-                </div>
+        <div className="progress-card d-flex justify-content-center align-items-center">
+          <div className="percent" style={{ "--num": 85 }}>
+            <div id="dot1" className="dot dot-animation"></div>
+            <svg>
+              <circle cx="70" cy="70" r="70"></circle>
+              <circle cx="70" cy="70" r="70"></circle>
+            </svg>
+            <div className="number d-flex justify-content-center align-items-center ">
+              <h2 className="text-white">
+                85<span>%</span>
+              </h2>
             </div>
+            <div className="prog-text text-white text-center">
+              <h6>Creative Approach</h6>
+            </div>
+          </div>
+        </div>
+        <div className="progress-card d-flex justify-content-center align-items-center">
+          <div className="percent" style={{ "--num": 75 }}>
+            <div id="dot2" className="dot dot-animation"></div>
+            <svg>
+              <circle cx="70" cy="70" r="70"></circle>
+              <circle cx="70" cy="70" r="70"></circle>
+            </svg>
+            <div className="number d-flex justify-content-center align-items-center text-white">
+              <h2 className="">
+                75<span>%</span>
+              </h2>
+            </div>
+            <div className="prog-text text-white text-center text-white">
+              <h6>Guaranteed Success</h6>
+            </div>
+          </div>
+        </div>
+        <div className="progress-card d-flex justify-content-center align-items-center">
+          <div className="percent" style={{ "--num": 95 }}>
+            <div id="dot3" className="dot dot-animation"></div>
+            <svg>
+              <circle cx="70" cy="70" r="70"></circle>
+              <circle cx="70" cy="70" r="70"></circle>
+            </svg>
+            <div className="number d-flex justify-content-center align-items-center text-white ">
+              <h2>
+                95<span>%</span>
+              </h2>
+            </div>
+            <div className="prog-text text-white text-center text-white">
+              <h6>SEO Optimization</h6>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
