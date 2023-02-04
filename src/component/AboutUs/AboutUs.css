@@ -7,9 +7,10 @@ p{
     font-weight: 200;
 }
 .about-us-bg{
-     background-color: rgb(17, 17, 27);
-    height: 40vh;
-    
+    padding-top: 100px;
+    padding-bottom: 100px;
+     background-color: #F1F0ED;
+     /* height: 40vh; */
 }
 /* .containertwo{
     position: relative;
@@ -34,13 +35,7 @@ p{
     animation: animate 15s linear infinite;    
     animation-duration: calc(125s / var(--i));        
 }
-/* .bubbles span:nth-child(even)
-{
-    background:rgb(75, 4, 4);
-    box-shadow: 0 0 0 10px #d1342e44,
-                0 0 50px #8b3939,
-                0 0 100px #802e32;
-} */
+
 @keyframes animate
 {
     0%
@@ -55,8 +50,7 @@ p{
 
 
 .timeline-section{
-    min-height: 100vh;
-    padding: 100px 15px;
+   padding-top: 100px;
 }
 .timeline-items{
     max-width: 1000px;
@@ -72,7 +66,7 @@ p{
 }
 .timeline-item{
     margin-bottom: 40px;
-    width: 100%;
+    /* width: 100%; */
     position: relative;
 }
 .timeline-item:last-child{
@@ -148,6 +142,11 @@ p{
         padding-left: 37px;
     }
     .timeline-dot{
-        left: 8px;
+        left: -4px;
+    }
+}
+@media screen and (max-width:420px) {
+    .timelinetext p{
+        font-size: 13px;
     }
 }

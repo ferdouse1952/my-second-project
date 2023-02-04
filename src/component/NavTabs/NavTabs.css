@@ -1,5 +1,4 @@
 .NavTabSection{
-    background: linear-gradient(120deg, rgb(188, 192, 197) 38%, rgba(2,0,36,1) 100%);
     display: grid;
     place-items: center;
 }

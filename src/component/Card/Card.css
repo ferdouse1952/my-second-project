@@ -1,15 +1,35 @@
-
-.cards-div{ 
-    padding: 0 100px;
+.cardRow{
+    background-color: #13203B;
 }
-.three-row-div{
-    background-image: linear-gradient(120deg, rgba(19,35,56,1) 38%, rgba(2,0,36,1) 100%);
-    padding: 60px;
-    z-index: 2;
-}
-.text-div p{
-    text-align: justify;
-}
-.verticle-border{
+/* .verticle-border{
     border-right: 1px solid rgb(230, 220, 220);
+} */
+.cardCol{
+    padding: 60px 10px;
+} 
+.cardCol p{
+    font-size: 15px;
+}
+
+/* Responsive */
+@media screen and (max-width:767px) {
+    .cardCol{
+        padding: 50px 8px;
+    }
+    .cardCol h5{
+        font-size: 17px;
+    }
+    .cardCol p{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width:575px) {
+    
+    .cardCol h5{
+        font-size: 18px;
+    }
+    .cardCol p{
+        font-size: 14px;
+    }
+   
 }

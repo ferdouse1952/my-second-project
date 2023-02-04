@@ -1,46 +1,14 @@
-.background{
-   /* background-image: linear-gradient(120deg, rgba(25, 34, 46, 0.589) 38%, rgb(0, 0, 0) 100%); */
+.navber{
+   background-color:#13203B ;
+}
+
+/* .background{
+   background-color: rgb(0, 0, 0);
    width: 100%;
    height:80vh;
    
 }
-.containertwo{
-   position: relative;
-   width: 100%;
-   height: 100%;
-   overflow: hidden;
-   background-color: rgb(0, 0, 0);
-   
-}
-.bubbles{
-   position: relative;
-   display: flex;
-}
-.bubbles span{
-   position: relative;
-   width: 15px;
-   height: 15px;
-   background: #4fc3dc;
-   margin: 0 15px;
-   border-radius: 50%;
-   box-shadow: 0 0 0 10px #0bc2eb44,
-               0 0 50px #4fc3dc,
-               0 0 100px #4fc3dc;
-   animation: animate 0.1s linear infinite;    
-   animation-duration: calc(350s / var(--i));        
-}
 
-@keyframes animate
-{
-   0%
-   {
-       transform: translateY(100vh) scale(0);
-   }
-   100%
-   {
-       transform: translateY(-10vh) scale(1);
-   }
-}
 .navbar-two{
    background-color:transparent;
    width: 100%;
@@ -88,4 +56,4 @@
 
 
 
-
+ */

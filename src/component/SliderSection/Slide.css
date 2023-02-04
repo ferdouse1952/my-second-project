@@ -1,9 +1,10 @@
 .slider-container{
     position: relative;
-    background-color: rgb(17, 20, 49);
+    /* background-color: rgb(17, 20, 49); */
+    margin-top: 230px;
 }
 .slider-container .slick-list{
-    padding: 40px 60px  !important;  
+    padding: 40px 50px  !important;  
 }
 .center .slick-center img{
      transform: scale(1.25);
@@ -14,11 +15,10 @@
 
 .img-div{
     height: 200px ;
-    width: 380px !important;
+    max-width: 392px !important;
     cursor: grab;
     transform: scale(0.8);
     z-index: 0 !important;
-
 }
 .img-div:focus{
     outline: none;
@@ -34,11 +34,68 @@
     background-size: contain;
     background-repeat: no-repeat;
     position: absolute;
-    width: 392px;
+    max-width: 392px;
     height: 200px;
     transform: scale(1.15);
     z-index: 3;
     top: 45px;
     left: 36%;
     pointer-events: none;
+}
+/* Responsive */
+
+@media screen and (max-width:1399px){
+    .img-div{
+       width: 332px !important;
+       height: 165px;
+    }
+    .frame-div{
+       width: 306px;
+       left: 37%;
+    }
+}
+@media screen and (max-width:1199px){
+    .img-div{
+       width: 273px !important;
+       height: 135px;
+    }
+    .frame-div{
+       width: 252px;
+    }
+}
+@media screen and (max-width:1010px){
+    .img-div{
+       width: 240px !important;
+       height: 135px;
+    }
+    .frame-div{
+       width: 247px;
+    }
+}
+/* @media screen and (max-width:991px){
+    .img-div{
+       width: 200px !important;
+       height: 102px;
+    }
+    .frame-div{
+       width: 190px;
+       top: 47px;
+       left: 38%;
+       
+    }
+} */
+/* @media screen and (max-width:767px){
+    .img-div{
+       width: 137px !important;
+       height: 68px;
+    }
+    .frame-div{
+       width: 130px;
+       top: 49px;
+       left:39%;
+    }
+} */
+@media screen and(max-width:575px){
+    
+    
 }

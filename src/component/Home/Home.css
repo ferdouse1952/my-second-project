@@ -1,0 +1,49 @@
+a{
+    text-decoration: none;
+}
+.homeSection{
+    background-color: rgb(241, 240, 237);
+    height: 75vh;
+}
+.homeText{
+    max-width: 750px;
+    padding-top: 150px;
+    padding-bottom: 140px;
+}
+.homeText h1{
+    font-size: 40px;
+    font-weight: 700;
+    color: #13203B;
+}
+.homeText p{
+    font-size: 18px;
+    font-weight: 400;
+    color: #2c2d30;
+}
+.homeBtn{
+    background-color: #13203B;
+    padding: 15px 40px;
+}
+
+/* Responsive */
+@media screen and (max-width:767px) {
+    .homeText h1{
+        font-size: 32px;
+    }
+    .homeText p{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width:553px) {
+    .homeText h1{
+        font-size: 25px;
+    }
+    .homeText p{
+        font-size: 13px;
+    }
+    .homeBtn{
+        background-color: #13203B;
+        padding: 10px 25px;
+    }
+}
+
